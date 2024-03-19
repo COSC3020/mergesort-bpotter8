@@ -15,3 +15,6 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+
+If n is the size of the array that is to be sorted, the time complexity is equal to $\Theta (n log n)$. The nested for-loops both iterate $logn$ times because the size doubles through each iteration. In the inner-loop, the mergeArr function is called which merges the arrays and takes $\Theta (n)$ time. These together make the worst-case runtime equal to $\Theta (n log n)$.
