@@ -16,4 +16,4 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-If n is the size of the array that is to be sorted, the time complexity is equal to $\Theta (n log n)$. The nested for-loops both iterate $logn$ times because the size doubles through each iteration. In the inner-loop, the mergeArr function is called which merges the arrays and takes $\Theta (n)$ time. These together make the worst-case runtime equal to $\Theta (n log n)$.
+If n is the size of the array that is to be sorted, the worst case time complexity is equal to $\Theta (n^2 log n)$. The nested for-loops both iterate $logn$ times because the size doubles through each iteration. In the inner-loop, the mergeArr function is called which merges the arrays and takes $\Theta (n^2)$ time. In the mergeArr function, the outer while loop iterates n times. The inner for loop can also iterate n times in the worst case scenario. These together make the worst-case runtime equal to $\Theta (n^2 log n)$.
